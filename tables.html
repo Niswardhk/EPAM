@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables</title>
+    <style>
+        th, td { border: 1px solid black; padding: 8px; text-align: center; }
+    </style>
+</head>
+<body>
+    <h3>Basic Table</h3>
+    <table>
+        <tr><th>Name</th><th>Age</th></tr>
+        <tr><td>Alice</td><td>25</td></tr>
+        <tr><td>Bob</td><td>30</td></tr>
+    </table>
+    <h3>Table with Colspan</h3>
+    <table>
+        <tr><th colspan="2">User Info</th></tr>
+        <tr><td>Name</td><td>Charlie</td></tr>
+        <tr><td>Age</td><td>28</td></tr>
+    </table>
+    <h3>Table with Rowspan</h3>
+    <table>
+        <tr><th rowspan="2">Item</th><th>Price</th></tr>
+        <tr><td>$10</td></tr>
+    </table>
+    <h3>Table with Merged Cells</h3>
+    <table>
+        <tr><th rowspan="2">Category</th><th colspan="2">Details</th></tr>
+        <tr><td>Name</td><td>Price</td></tr>
+        <tr><td>Fruit</td><td>Apple</td><td>$2</td></tr>
+    </table>
+    <h3>BLACK AND WHITE COLOR Table</h3>
+    <table>
+        <tr><th>Product</th><th>Price</th></tr>
+        <tr style="background-color: #f2f2f2;"><td>Milk</td><td>$3</td></tr>
+        <tr><td>Bread</td><td>$2</td></tr>
+        <tr style="background-color: #f2f2f2;"><td>Eggs</td><td>$5</td></tr>
+    </table>
+
+</body>
+</html>
