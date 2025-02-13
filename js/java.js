@@ -34,17 +34,13 @@ constExample();
 
 //////////////////////////////////////////////////////////////////////////////
 let name = "John";
-console.log(name); // Output: John
-
+console.log(name);
 let age = 25;
-console.log(age); // Output: 25
-
+console.log(age); 
 test = 10>20;
-console.log(test); // Output: false
-
+console.log(test); 
 let emptyValue = null;
-console.log(emptyValue); // Output: null
-
+console.log(emptyValue); 
 let notDefined;
 console.log(notDefined); // Output: undefined
 ////////////////////////////////////////////////////////////////////////////
@@ -72,3 +68,57 @@ for (let key in person) {
     console.log(`${key}: ${person[key]}`);
 }
 console.log("city" in person); 
+///////////////////////////////////////////////////////////////////////////
+//conditional statements
+let clname = "II B.Tech CSE A1";
+let cr = "xyz";
+let game = "Cricket"
+if(clname == "III B.Tech CSE A2") {
+document.write("CR of the Class is: ", cr);
+}
+else if(game == "Cricket"){
+document.write("Caption of Cricket Team is Dhoni");
+}
+else{
+document.write("Invalid Input")
+}
+/////////////////////////////////////////////////////////////////////////
+let a=19;
+let cvote=(a>=18)?"Yes ,you can vote!": "no cant vote";
+console.log(cvote);
+//////////////////////////////////////////////////////////////////
+//global scope
+var Apple = "red";
+let Orang = "yellow";
+const banan = "green"
+function fruit() {
+document.write(Apple)
+document.write(Orange)
+document.write(banana)
+}
+fruit()
+//////////////////////////////////////////////////////////////
+//function scope
+var Apple = "red";
+let Orange = "yellow";
+const banana = "green"
+function fruit() {
+var x = 100;
+let y = 200;
+const z = "Mahesh"
+document.write(x)
+document.write(y)
+document.write(z)
+}
+
+fruit()
+/////////////////////////////////////////////////////////////////
+//block scope
+function sports() {
+    if (10 < 20){
+    let cricket = "virat"
+    document.write(cricket)
+    }
+    document.write(cricket)
+    }
+    sports()
